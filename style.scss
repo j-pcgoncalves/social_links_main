@@ -27,5 +27,56 @@ body {
         display: flex;
         align-items: center;
         flex-direction: column;
+
+        .profile_img {
+            border-radius: 50%;
+            width: 88px;
+            margin-bottom: 24px;
+        }
+
+        .profile_name {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 14px;
+        }
+
+        .profile_location {
+            font-size: 14px;
+            color: $neon_green;
+            margin-bottom: 24px;
+        }
+
+        .profile_quote {
+            font-size: 14px;
+            color: white;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.link_container {
+    background-color: $bg_link_gray;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    font-weight: bold;
+    
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    &:hover {
+        background-color: $neon_green;
+        color: $bg_link_gray;
+    }
+}
+
+@media only screen and (max-width: 478px) {
+    body {
+        padding: 116px 24px;
     }
 }
